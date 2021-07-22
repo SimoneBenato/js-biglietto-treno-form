@@ -5,12 +5,33 @@
 }
 
 body {
-    padding: 70px;
+    background-color: rgb(185, 20, 80);
 }
 
-.box {
-    background-color: aqua;
-    height: 300px;
-    width: 300px;
+h1, h2 {
+    color: white;
+}
+
+label {
+    color: rgb(185, 20, 80);
+}
+
+input, select {
+    max-width: 200px;
+    border: 1px solid rgb(185, 20, 80);
+    border-radius: 5px;
+}
+
+.calculator {
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+
+.none {
     display: none;
+}
+
+.ticket {
+    background-color: white;
 }
