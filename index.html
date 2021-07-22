@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Generatore biglietto del treno</title>
+</head>
+<body>
+    <div class="container">
+        <!-- input per nome e cognome -->
+        <label for="nome">Nome Cognome</label>
+        <input id="nome" type="text" name="nome" placeholder="Inserisci il tuo nome">
+        <!-- fine input per nome e cognome -->
+
+        <!-- input per km da percorrere -->
+        <label for="km">Km da percorrere</label>
+        <input id="km" type="number" name="km" placeholder="Inserisci i Km">
+        <!-- fine input per km da percorrere -->
+
+        <!-- input per fascia di età -->
+        <label for="fascia_eta">Fascia d'et&agrave;</label>
+        <select name="fascia_eta" id="fascia_eta">
+            <option value="minorenne">Minorenne</option>
+            <option value="maggiorenne">Maggiorenne</option>
+            <option value="over65">Over 65</option>
+        </select>
+        <!-- fine input per fascia di età -->
+    </div>
+
+    <div class="container">
+        <button id="calcolaPrezzo" name="calcolaPrezzo">Genera</button>
+        <button id="annulla" name="annulla">Annulla</button>
+    </div>
+
+    <div class="conta">
+        <div id="biglietto" class="box">
+            <p id="uno"></p>
+            <p id="due"></p>
+            <p id="tre"></p>
+            <p id="quattro"></p>
+            <p id="cinque"></p>
+            <p id="sei"></p>
+        </div>
+    </div>
+
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
