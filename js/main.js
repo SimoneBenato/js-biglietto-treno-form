@@ -27,7 +27,11 @@ btnGenera.addEventListener("click",
         var numeroCarrozza = Math.floor(Math.random() * (61 - 1) ) + 1;
         
         document.getElementById("nomePasseggero").innerHTML = nome;
-        document.getElementById("offerta").innerHTML = ("Sconto ") + fasciaEta;
+        if (fasciaEta == "minorenne" || fasciaEta == "over65") {
+            document.getElementById("offerta").innerHTML = ("Sconto ") + fasciaEta;
+        } else {
+            document.getElementById("offerta").innerHTML = fasciaEta;
+        }
         document.getElementById("price").innerHTML = price.toFixed(2);
         document.getElementById("codiceTreno").innerHTML = codiceTreno;
         document.getElementById("numeroCarrozza").innerHTML = numeroCarrozza;
